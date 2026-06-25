@@ -1,18 +1,20 @@
 # AI-Powered Brochure Generator
 
-Automatically generates a company brochure by scraping and navigating its website using OpenAI's GPT-4.
+Automatically generates a company brochure by scraping and navigating its website using OpenAI's GPT-4, with a clean Gradio UI for easy interaction.
 
 ## What It Does
 
 - Scrapes a company's website and extracts all links
 - Uses GPT-4 to intelligently select the most relevant pages (About, Careers, etc.)
 - Fetches content from those pages
-- Generates a professional markdown brochure with streaming output
+- Generates a professional markdown brochure with real-time streaming output
+- Clean Gradio UI with company name and URL inputs
 
 ## Tech Stack
 
 - Python, Jupyter Notebook
 - OpenAI API (GPT-4.1-mini)
+- Gradio for the user interface
 - BeautifulSoup4 for web scraping
 - python-dotenv for config
 
@@ -42,10 +44,10 @@ jupyter notebook brochure.ipynb
 
 ## Usage
 
-```python
-stream_brochure("HuggingFace", "https://huggingface.co")
-stream_brochure("Anthropic", "https://anthropic.com")
-```
+Enter a company name and URL in the Gradio UI and click Submit to generate a brochure. Examples included:
+
+- HuggingFace — https://huggingface.co
+- Anthropic — https://anthropic.com
 
 ## Project Structure
 
@@ -56,7 +58,3 @@ stream_brochure("Anthropic", "https://anthropic.com")
 ├── .gitignore         # ignored files
 └── requirements.txt
 ```
-
----
-
-Built as part of an AI Engineering course.
